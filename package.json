@@ -1,6 +1,6 @@
 {
   "name": "@skpm/dialog",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A sketch module for showing dialog",
   "main": "lib/index.js",
   "devDependencies": {
@@ -18,7 +18,8 @@
   "scripts": {
     "test": "eslint . --ignore-path .gitignore",
     "lint-staged": "lint-staged",
-    "prettier:base": "prettier --single-quote --trailing-comma es5 --no-semi --write",
+    "prettier:base":
+      "prettier --single-quote --trailing-comma es5 --no-semi --write",
     "prettify": "npm run prettier:base \"./lib/**/*.js\""
   },
   "repository": {

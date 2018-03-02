@@ -79,7 +79,7 @@ The `extensions` array should contain extensions without wildcards or dots (e.g.
 If a `callback` is passed, the API call will be still be synchronous but the
 result will be passed via `callback(filenames)`.
 
-### `dialog.showSaveDialog([browserWindow, ]options[, callback])`
+### `dialog.showSaveDialog([document, ]options[, callback])`
 
 * `document` Document (optional)
 * `options` Object
@@ -109,7 +109,7 @@ The `filters` specifies an array of file types that can be displayed, see
 If a `callback` is passed, the API call will still be synchronous but the result
 will be passed via `callback(filename)`.
 
-### `dialog.showMessageBox([browserWindow, ]options[, callback])`
+### `dialog.showMessageBox([document, ]options[, callback])`
 
 * `document` Document (optional)
 * `options` Object
