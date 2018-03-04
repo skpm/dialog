@@ -23,3 +23,19 @@ rules:
   no-var: 0
   vars-on-top: 0
   eqeqeq: 0
+  object-shorthand: 0
+globals:
+  coscript: 0
+  NSOnState: 0
+  NSButton: 0
+  NSSavePanel: 0
+  NSOKButton: 0
+  NSURL: 0
+  NSSelectorFromString: 0
+  NSApp: 0
+  NSDictionary: 0
+  NSAlert: 0
+  NSImage: 0
+  NSOffState: 0
+  NSOpenPanel: 0
+  __command: 0

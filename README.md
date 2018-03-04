@@ -1,7 +1,7 @@
 # Sketch dialogs
 
 A Sketch module for displaying native system dialogs for opening and saving
-files, alerting, etc.
+files, alerting, etc. The API is the mimicking the [Electron dialog API](https://github.com/electron/electron/blob/master/docs/api/dialog.md).
 
 ## Installation
 
@@ -28,6 +28,10 @@ console.log(
 ## Methods
 
 The `dialog` module has the following methods:
+
+* `showOpenDialog`
+* `showSaveDialog`
+* `showMessageBox`
 
 ### `dialog.showOpenDialog([document, ]options[, callback])`
 
@@ -76,8 +80,7 @@ when you want to limit the user to a specific type. For example:
 The `extensions` array should contain extensions without wildcards or dots (e.g.
 `'png'` is good but `'.png'` and `'*.png'` are bad).
 
-If a `callback` is passed, the API call will be still be synchronous but the
-result will be passed via `callback(filenames)`.
+If a `callback` is passed, the API call will be asynchronous and the result will be passed via `callback(filenames)`.
 
 ### `dialog.showSaveDialog([document, ]options[, callback])`
 
@@ -106,7 +109,7 @@ window, making it a sheet.
 The `filters` specifies an array of file types that can be displayed, see
 `dialog.showOpenDialog` for an example.
 
-If a `callback` is passed, the API call will still be synchronous but the result
+If a `callback` is passed, the API call will be asynchronous and the result
 will be passed via `callback(filename)`.
 
 ### `dialog.showMessageBox([document, ]options[, callback])`
@@ -142,7 +145,7 @@ Shows a message box, it will block the process until the message box is closed.
 The `document` argument allows the dialog to attach itself to a Sketch document
 window, making it a sheet.
 
-If a `callback` is passed, the API call will still be synchronous but the result
+If a `callback` is passed, the API call will be asynchronous and the result
 will be passed via `callback({ response, checkboxChecked })`.
 
 ## Sheets
