@@ -20,7 +20,11 @@ An example of showing a dialog to select multiple files and directories:
 import dialog from '@skpm/dialog'
 console.log(
   dialog.showOpenDialog({
-    properties: ['openFile', 'openDirectory', 'multiSelections']
+    properties: {
+      openFile: false,
+      openDirectory: true,
+      multiSelections: true,
+    },
   })
 )
 ```
@@ -42,8 +46,8 @@ The `dialog` module has the following methods:
   * `buttonLabel` String (optional) - Custom label for the confirmation button,
     when left empty the default label will be used.
   * `filters` FileFilter[](optional)
-  * `properties` String[](optional) - Contains which features the dialog should
-    use. The following values are supported:
+  * `properties` Object(optional) - Contains which features the dialog should
+    use. The value should be type of boolean. The following values are supported:
     * `openFile` - Allow files to be selected.
     * `openDirectory` - Allow directories to be selected.
     * `multiSelections` - Allow multiple paths to be selected.
@@ -72,7 +76,7 @@ when you want to limit the user to a specific type. For example:
   filters: [
     { name: 'Images', extensions: ['jpg', 'png', 'gif'] },
     { name: 'Movies', extensions: ['mkv', 'avi', 'mp4'] },
-    { name: 'Custom File Type', extensions: ['as'] }
+    { name: 'Custom File Type', extensions: ['as'] },
   ]
 }
 ```
