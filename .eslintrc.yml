@@ -39,3 +39,4 @@ globals:
   NSOffState: 0
   NSOpenPanel: 0
   __command: 0
+  NSString: 0
