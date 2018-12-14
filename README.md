@@ -41,8 +41,8 @@ The `dialog` module has the following methods:
   * `defaultPath` String (optional)
   * `buttonLabel` String (optional) - Custom label for the confirmation button,
     when left empty the default label will be used.
-  * `filters` FileFilter[](optional)
-  * `properties` String[](optional) - Contains which features the dialog should
+  * `filters` FileFilter\[] (optional)
+  * `properties` String\[] (optional) - Contains which features the dialog should
     use. The following values are supported:
     * `openFile` - Allow files to be selected.
     * `openDirectory` - Allow directories to be selected.
@@ -56,7 +56,7 @@ The `dialog` module has the following methods:
       directory instead of a file.
   * `message` String (optional) - Message to display above input boxes.
 * `callback` Function (optional)
-  * `filePaths` String[] - An array of file paths chosen by the user
+  * `filePaths` String\[] - An array of file paths chosen by the user
 
 Returns `String[]`, an array of file paths chosen by the user, if the callback
 is provided it returns `undefined`.
@@ -91,7 +91,7 @@ If a `callback` is passed, the API call will be asynchronous and the result will
     path, or file name to use by default.
   * `buttonLabel` String (optional) - Custom label for the confirmation button,
     when left empty the default label will be used.
-  * `filters` FileFilter[](optional)
+  * `filters` FileFilter\[] (optional)
   * `message` String (optional) - Message to display above text fields.
   * `nameFieldLabel` String (optional) - Custom label for the text displayed in
     front of the filename text field.
@@ -119,7 +119,7 @@ will be passed via `callback(filename)`.
   * `type` String (optional) - Can be `"none"`, `"info"`, `"error"`,
     `"question"` or `"warning"`. Both `"warning"` and `"error"` display the same
     warning icon.
-  * `buttons` String[](optional) - Array of texts for buttons.
+  * `buttons` String\[] (optional) - Array of texts for buttons.
   * `defaultId` Integer (optional) - Index of the button in the buttons array
     which will be selected by default when the message box opens.
   * `title` String (optional) - Title of the message box, some platforms will
