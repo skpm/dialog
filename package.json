@@ -18,22 +18,24 @@
   "scripts": {
     "test": "eslint . --ignore-path .gitignore",
     "lint-staged": "lint-staged",
-    "prettier:base":
-      "prettier --single-quote --trailing-comma es5 --no-semi --write",
+    "prettier:base": "prettier --single-quote --trailing-comma es5 --no-semi --write",
     "prettify": "npm run prettier:base \"./lib/**/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skpm/dialog.git"
   },
-  "keywords": ["sketch", "module", "dialog", "ui"],
+  "keywords": [
+    "sketch",
+    "module",
+    "dialog",
+    "ui"
+  ],
   "author": "Mathieu Dutour <mathieu@dutour.me> (http://mathieu.dutour.me/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/skpm/dialog/issues"
   },
   "homepage": "https://github.com/skpm/dialog#readme",
-  "dependencies": {
-    "cocoascript-class": "^0.1.2"
-  }
+  "dependencies": {}
 }

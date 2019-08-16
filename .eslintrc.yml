@@ -8,7 +8,7 @@ plugins:
   - no-not-accumulator-reassign
   - prettier
 env:
-    node: true
+  node: true
 rules:
   no-param-reassign: 0
   import/no-dynamic-require: 0
@@ -18,7 +18,8 @@ rules:
   no-loop-func: 0
   global-require: 0
   no-console: 0
-  no-not-accumulator-reassign/no-not-accumulator-reassign: [2, ['reduce'], {props: true}]
+  no-not-accumulator-reassign/no-not-accumulator-reassign:
+    [2, ['reduce'], { props: true }]
   prefer-arrow-callback: 0
   no-var: 0
   vars-on-top: 0
@@ -40,3 +41,4 @@ globals:
   NSOpenPanel: 0
   __command: 0
   NSString: 0
+  __mocha__: 0
