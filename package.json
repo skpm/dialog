@@ -1,6 +1,6 @@
 {
   "name": "@skpm/dialog",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "A sketch module for showing dialog",
   "main": "lib/index.js",
   "devDependencies": {
