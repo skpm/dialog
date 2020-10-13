@@ -14,8 +14,7 @@
     "lint-staged": "^4.2.3",
     "pre-commit": "^1.2.2",
     "prettier": "^1.7.3",
-    "rimraf": "^2.6.2",
-    "sketch-app-types": "^0.1.1"
+    "rimraf": "^2.6.2"
   },
   "scripts": {
     "test": "eslint . --ignore-path .gitignore",
@@ -40,6 +39,7 @@
   },
   "homepage": "https://github.com/skpm/dialog#readme",
   "dependencies": {
-    "mocha-js-delegate": "^0.2.0"
+    "mocha-js-delegate": "^0.2.0",
+    "sketch-app-types": "^0.1.1"
   }
 }
