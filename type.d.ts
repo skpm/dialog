@@ -1,8 +1,4 @@
-/// <reference types="sketch-app-types"/>
-
 declare module "@skpm/dialog" {
-  import { Document } from 'sketch/dom';
-
   namespace dialog {
     export type DialogType = "none" | "info" | "error" | "question" | "warning";
 
@@ -100,7 +96,7 @@ declare module "@skpm/dialog" {
      * the message box is closed.
      */
     export function showOpenDialogSync(
-      document?: Document | OpenDialogOptions,
+      document?: unknown,
       options?: OpenDialogOptions
     ): string[];
 
@@ -108,7 +104,7 @@ declare module "@skpm/dialog" {
      * Shows a open dialog box
      */
     export function showOpenDialog(
-      document?: Document | OpenDialogOptions,
+      document?: unknown,
       options?: OpenDialogOptions
     ): Promise<OpenDialogReturn>;
 
@@ -119,7 +115,7 @@ declare module "@skpm/dialog" {
      * Return the path of the file chosen by the user.
      */
     export function showSaveDialogSync(
-      document?: Document | SaveDialogOptions,
+      document?: unknown,
       options?: SaveDialogOptions
     ): string;
 
@@ -127,7 +123,7 @@ declare module "@skpm/dialog" {
      * Shows a save dialog box.
      */
     export function showSaveDialog(
-      document?: Document | SaveDialogOptions,
+      document?: unknown,
       options?: SaveDialogOptions
     ): Promise<SaveDialogReturn>;
 
@@ -135,7 +131,7 @@ declare module "@skpm/dialog" {
      * Shows a message box
      */
     export function showMessageBox(
-      document?: Document | MessageBoxOptions,
+      document?: unknown,
       options?: MessageBoxOptions
     ): number;
 
@@ -144,7 +140,7 @@ declare module "@skpm/dialog" {
      * the message box is closed.
      */
     export function showMessageBoxSync(
-      document?: Document | MessageBoxOptions,
+      document?: unknown,
       options?: MessageBoxOptions
     ): Promise<{
       response: number;
