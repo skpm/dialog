@@ -96,7 +96,7 @@ declare module "@skpm/dialog" {
      * the message box is closed.
      */
     export function showOpenDialogSync(
-      document?: unknown,
+      document?: any,
       options?: OpenDialogOptions
     ): string[];
 
@@ -104,7 +104,7 @@ declare module "@skpm/dialog" {
      * Shows a open dialog box
      */
     export function showOpenDialog(
-      document?: unknown,
+      document?: any,
       options?: OpenDialogOptions
     ): Promise<OpenDialogReturn>;
 
@@ -115,7 +115,7 @@ declare module "@skpm/dialog" {
      * Return the path of the file chosen by the user.
      */
     export function showSaveDialogSync(
-      document?: unknown,
+      document?: any,
       options?: SaveDialogOptions
     ): string;
 
@@ -123,24 +123,24 @@ declare module "@skpm/dialog" {
      * Shows a save dialog box.
      */
     export function showSaveDialog(
-      document?: unknown,
+      document?: any,
       options?: SaveDialogOptions
     ): Promise<SaveDialogReturn>;
-
-    /**
-     * Shows a message box
-     */
-    export function showMessageBox(
-      document?: unknown,
-      options?: MessageBoxOptions
-    ): number;
 
     /**
      * Shows a message box, it will block the process until
      * the message box is closed.
      */
     export function showMessageBoxSync(
-      document?: unknown,
+      document?: any,
+      options?: MessageBoxOptions
+    ): number;
+
+    /**
+     * Shows a message box
+     */
+    export function showMessageBox(
+      document?: any,
       options?: MessageBoxOptions
     ): Promise<{
       response: number;
