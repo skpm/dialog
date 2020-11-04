@@ -39,7 +39,6 @@
   },
   "homepage": "https://github.com/skpm/dialog#readme",
   "dependencies": {
-    "mocha-js-delegate": "^0.2.0",
-    "sketch-app-types": "^0.1.1"
+    "mocha-js-delegate": "^0.2.0"
   }
 }
